@@ -1,0 +1,31 @@
+<nav class="px-5 navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Online Store</a>
+
+    <div class="navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="router-link-active"
+                    class="nav-link">
+                    Products
+                </a>
+            </li>
+        </ul>
+        <form class="d-flex form-inline my-2 my-lg-0">
+            <a *ngIf="!loggedIn" routerLink="login" routerLinkActive="router-link-active" class="nav-item nav-link me-3">
+                <i class="fa fa-user"></i> Login
+            </a>
+            <div *ngIf="loggedIn">
+                <p class="nav-item nav-link me-3">
+                    Hello, <span class="user-email">{{email}}</span>
+                </p>
+                <a (click)="logOut()" routerLink="/" class="nav-item nav-link me-3">
+                    <i class="fa fa-user"></i> Logout
+                </a>
+            </div>
+            
+            <a routerLink="cart" routerLinkActive="router-link-active" class=" nav-item nav-link">
+                <i class="fa fa-shopping-cart"></i> Cart ({{numberOfProductsInCart}})
+            </a>
+        </form>
+    </div>
+</nav>

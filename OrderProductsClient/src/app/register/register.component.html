@@ -1,0 +1,73 @@
+<div class="container mt-3">
+    <form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && onRegister()">
+        <h2 class="text-center">Register</h2>
+        <hr>
+    
+        <div class="form-group mb-3">
+            <label for="emailAddress">Email address</label>
+            <input [formControl]="$any(registerForm.controls['email'])"
+                label="Email" id="emailAddress" type="text" class="form-control"
+                [class.is-invalid]="registerForm.controls['email'].touched 
+                && registerForm.controls['email'].invalid"
+            >
+            <div *ngIf="registerForm.controls['email'].errors?.['required']" 
+                class="invalid-feedback"
+            >
+                Please enter a email
+            </div>
+        </div>
+    
+        <div class="form-group mb-3">
+            <label for="password">Password</label>
+            <input [formControl]="$any(registerForm.controls['password'])"
+                label="Password" type="password" id="password" class="form-control"
+                [class.is-invalid]="registerForm.controls['password'].touched 
+                && registerForm.controls['password'].invalid"
+            >
+            <div *ngIf="registerForm.controls['password'].errors?.['minlength']" 
+            class="invalid-feedback"
+            >
+                Password must be at least 
+                {{registerForm.controls['password'].errors?.['minlength'].requiredLength}} 
+                characters
+            </div>
+            <div *ngIf="registerForm.controls['password'].errors?.['maxlength']" 
+                class="invalid-feedback"
+            >
+                Password must be at most 
+                {{registerForm.controls['password'].errors?.['maxlength'].requiredLength}} 
+                characters
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmationPassword">Confirm Password</label>
+            <input [formControl]="$any(registerForm.controls['confirmPassword'])"
+                label="confirmation password" id="confirmationPassword" type="password"
+                class="form-control"
+                [class.is-invalid]="registerForm.controls['confirmPassword'].touched 
+                && registerForm.controls['confirmPassword'].invalid"
+            >
+            <div *ngIf="registerForm.controls['confirmPassword'].errors?.['notMatching']" 
+                class="invalid-feedback"
+            >
+                Passwords do not match
+            </div>
+        </div>
+    
+    
+        <div class="row" *ngIf="validationErrors">
+            <ul class="text-danger">
+                <li *ngFor="let error of validationErrors">
+                    {{error}}
+                </li>
+            </ul>
+        </div>
+    
+        <div class="text-center mt-5">
+            <button [disabled]="!registerForm.valid" class="btn btn-success me-2" type="submit">
+                Sign Up
+            </button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+<div class="container mt-5">
+    <div class="row search-box">
+        <input type="search" placeholder="Search for products" class="form-control mb-5" [(ngModel)]="searchModel" (ngModelChange)="onSearchChange($event)" >
+    </div>
+    <div class="row">
+        <div *ngFor="let product of products" class="col-lg-4 col-md-6 mb-3 
+            d-flex align-items-stretch">
+            <div class="card h-50 mb-4">
+                <img [src]="product.pictureUrl" [alt]="product.name">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">{{product.name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        Brand: {{product.manufacturerName}}
+                    </h6>
+                    <p class="card-text mb-4">Price: {{product.price | currency}}</p>
+                    <div class="d-flex justify-content-between">
+                        <a [routerLink]="['product-details', product.id]"
+                            class="w-50 me-2 btn btn-secondary mt-auto align-self-start">
+                            Details
+                        </a>
+                        <a (click)="addToCart(product)" class="w-50 btn btn-danger mt-auto align-self-start">
+                            Add to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

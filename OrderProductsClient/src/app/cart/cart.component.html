@@ -1,0 +1,62 @@
+<div class="container py-5">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-10">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
+            </div>
+
+            <p *ngIf="cartItems.length <= 0" class="h4">
+                Your cart is empty. Click 
+                <a routerLink="/" 
+                    class="link-body-emphasis link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-dark fw-bold">
+                    here
+                </a> to shop.
+            </p>    
+
+            <div *ngIf="cartItems">
+                <div *ngFor="let item of cartItems">
+                    <div class="card rounded-3 mb-4">
+                        <div class="card-body p-4">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <img [src]="item.imageUrl" class="img-fluid rounded-3" alt="{{item.title}}">
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-3">
+                                    <p class="lead fw-normal mb-2">{{item.title}}</p>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                    <p class="mb-2">Quantity:
+                                        <span class="fw-bold">{{item.quantity}}</span>
+                                    </p>
+                                    <p class="mb-0">Price:
+                                        <span class="fw-bold">{{item.price | currency}}</span>
+                                    </p>
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2 text-end">
+                                    <button (click)="removeItemFromCart(item)" class="btn btn-danger">
+                                        <i class="fa fa-trash fa-lg"></i> Remove
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="!(cartItems.length <= 0)" class="card border-0">
+                    <div class="align-self-end ml-auto mt-3">
+                        <p>Total: <strong>{{cartSum | currency}}</strong></p>
+                    </div>
+                    <div class="align-self-end ml-auto">
+                        <button type="button" 
+                        (click)="removeItemsFromCart()"
+                        class="btn btn-warning btn-block btn-lg"
+                        >
+                                Checkout Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

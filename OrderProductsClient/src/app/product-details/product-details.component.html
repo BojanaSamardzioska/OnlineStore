@@ -1,0 +1,40 @@
+<div *ngIf="product" class="container">
+    <div class="col-md-12 pt-5">
+        <section class="panel">
+            <div class="panel-body d-flex">
+                <div class="col-md-6">
+                    <div class="pro-img me-5 mb-5">
+                        <img [src]="product.pictureUrl" [alt]="product.name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="pro-d-title">
+                        <h3 class="mb-4">
+                            {{product.name}}
+                        </h3>
+                    </h4>
+                    <p>
+                        {{product.description}}
+                    </p>
+                    <div class="product-meta-first">
+                        <span>Brand: <strong>{{product.manufacturerName}}</strong></span>
+                    </div>
+                    <div class="m-bot15 mt-4 product-meta-second"> 
+                        <span>Price: 
+                            <strong class="pro-price">{{product.price | currency}}</strong>
+                        </span>
+                    </div>
+                    <div class="form-group d-flex align-items-center mt-4">
+                        <label class="me-2">Quantity:</label>
+                        <input [(ngModel)]="productQuantity" type="number" placeholder="1" class="form-control quantity">
+                    </div>
+                    <p class="mt-4">
+                        <button (click)="addToCart(product)" class="btn btn-round btn-danger" type="button">
+                            <i class="fa fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

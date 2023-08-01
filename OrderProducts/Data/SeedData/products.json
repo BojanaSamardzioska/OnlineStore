@@ -1,0 +1,72 @@
+[
+  {
+    "Name": "PUMA x DAPPER DAN Women's Shorts",
+    "Description": "Cras eu rutrum odio, quis convallis mi. Nunc aliquam porta fermentum. Sed nec libero in ipsum finibus imperdiet nec et diam. Donec ultrices, nisi a facilisis convallis, nunc urna semper purus, ac feugiat neque erat in turpis. Pellentesque magna justo, pellentesque vel augue ut, porttitor dignissim purus.",
+    "Price": 80.00,
+    "PictureUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/539807/66/mod02/fnd/PNA/fmt/png/PUMA-x-DAPPER-DAN-Women's-Shorts",
+    "ManufacturerName": "Puma"
+  },
+  {
+    "Name": "Iconic T7 Women's Track Jacket",
+    "Description": "Cras eu rutrum odio, quis convallis mi. Nunc aliquam porta fermentum. Sed nec libero in ipsum finibus imperdiet nec et diam. Donec ultrices, nisi a facilisis convallis, nunc urna semper purus, ac feugiat neque erat in turpis. Pellentesque magna justo, pellentesque vel augue ut, porttitor dignissim purus.",
+    "Price": 65.00,
+    "PictureUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1050,h_1050/global/531850/01/mod01/fnd/PNA/fmt/png/Iconic-T7-Women's-Track-Jacket",
+    "ManufacturerName": "Puma"
+  },
+  {
+    "Name": "Essentials 3-Stripes Bike Shorts",
+    "Description": "Pellentesque quam turpis, accumsan quis consequat ac, dapibus vitae ligula. Sed faucibus vestibulum dolor id pellentesque. Donec iaculis pharetra ligula. Phasellus id urna justo.",
+    "Price": 60.50,
+    "PictureUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6ac9f107f1cb4f49813cae2100fd0e5e_9366/Essentials_3-Stripes_Bike_Shorts_Blue_HF5955_21_model.jpg",
+    "ManufacturerName": "Adidas"
+  },
+  {
+    "Name": "Impact Training High-Support Bra",
+    "Description": "Pellentesque quam turpis, accumsan quis consequat ac, dapibus vitae ligula. Sed faucibus vestibulum dolor id pellentesque. Donec iaculis pharetra ligula. Phasellus id urna justo.",
+    "Price": 55.00,
+    "PictureUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d6d02efc38224845b346adef001dec79_9366/TLRD_Impact_Training_High-Support_Bra_Black_HF2297_21_model.jpg",
+    "ManufacturerName": "Adidas"
+  },
+  {
+    "Name": "Iconic T7 Women's Track Pants",
+    "Description": "Cras eu rutrum odio, quis convallis mi. Nunc aliquam porta fermentum. Sed nec libero in ipsum finibus imperdiet nec et diam. Donec ultrices, nisi a facilisis convallis, nunc urna semper purus, ac feugiat neque erat in turpis. Pellentesque magna justo, pellentesque vel augue ut, porttitor dignissim purus.",
+    "Price": 50.70,
+    "PictureUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1050,h_1050/global/589463/01/mod01/fnd/PNA/fmt/png/Iconic-T7-Women's-Track-Pants",
+    "ManufacturerName": "Puma"
+  },
+  {
+    "Name": "T7 Women's High Waist Leggings",
+    "Description": "Cras eu rutrum odio, quis convallis mi. Nunc aliquam porta fermentum. Sed nec libero in ipsum finibus imperdiet nec et diam. Donec ultrices, nisi a facilisis convallis, nunc urna semper purus, ac feugiat neque erat in turpis. Pellentesque magna justo, pellentesque vel augue ut, porttitor dignissim purus.",
+    "Price": 45.20,
+    "PictureUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/621463/01/mod02/fnd/PNA/fmt/png/T7-Women's-High-Waist-Leggings",
+    "ManufacturerName": "Puma"
+  },
+  {
+    "Name": "Adidas Z.N.E. Tee",
+    "Description": "Pellentesque quam turpis, accumsan quis consequat ac, dapibus vitae ligula. Sed faucibus vestibulum dolor id pellentesque. Donec iaculis pharetra ligula. Phasellus id urna justo.",
+    "Price": 40.00,
+    "PictureUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/83165af748884585b835d8f315b43db1_9366/adidas_Z.N.E._Tee_Red_IK3997_21_model.jpg",
+    "ManufacturerName": "Adidas"
+  },
+  {
+    "Name": "ADICOLOR 3-Stripes Shorts",
+    "Description": "Pellentesque quam turpis, accumsan quis consequat ac, dapibus vitae ligula. Sed faucibus vestibulum dolor id pellentesque. Donec iaculis pharetra ligula. Phasellus id urna justo.",
+    "Price": 35.80,
+    "PictureUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/61073697d4e341a982b7afc201147a3a_9366/Adicolor_3-Stripes_Shorts_Green_IK6580_21_model.jpg",
+    "ManufacturerName": "Adidas"
+  },
+  {
+    "Name": "ADICOLOR Essentials Tee",
+    "Description": "Pellentesque quam turpis, accumsan quis consequat ac, dapibus vitae ligula. Sed faucibus vestibulum dolor id pellentesque. Donec iaculis pharetra ligula. Phasellus id urna justo.",
+    "Price": 30.20,
+    "PictureUrl": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0f28efe3e6d1447e8bcfafd0010238a3_9366/Adicolor_Essentials_Tee_Green_IP1285_21_model.jpg",
+    "ManufacturerName": "Adidas"
+  },
+  {
+    "Name": "Classics Women's Logo Tee",
+    "Description": "Cras eu rutrum odio, quis convallis mi. Nunc aliquam porta fermentum. Sed nec libero in ipsum finibus imperdiet nec et diam. Donec ultrices, nisi a facilisis convallis, nunc urna semper purus, ac feugiat neque erat in turpis. Pellentesque magna justo, pellentesque vel augue ut, porttitor dignissim purus.",
+    "Price": 30.50,
+    "PictureUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1050,h_1050/global/531863/02/mod01/fnd/PNA/fmt/png/Classics-Women's-Logo-Tee",
+    "ManufacturerName": "Puma"
+  }
+]
